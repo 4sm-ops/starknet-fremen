@@ -4,6 +4,11 @@
 
 The Fremen Protocol is a Web3, smart contracts-based social graph for the StarkNet Ecosystem designed to empower creators to own the links between themselves and their community, forming a fully composable, user-owned social graph. The protocol is built from the ground up with modularity in mind, allowing new features to be added while ensuring immutable user-owned content and social relationships.
 
+## Starknet for Social Graphs?
+
+1. ZK Security + scaling + fees
+2. Allow more people to interact / benefit from Social Graph (like Lens) ecosystem [ There will be a way to use data from other chains]
+3. Speed is another big one, Polygon is actually quite slow and clogs easily
 
 ## Profiles
 
