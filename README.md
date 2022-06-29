@@ -109,3 +109,27 @@ Lastly, there is also a `ModuleGlobals` contract which acts as a central data pr
 This iteration of the Freement Protocol implements a transparent upgradeable proxy for the central hub to be controlled by governance. There are no other aspects of the protocol that are upgradeable. In an ideal world, the hub will not require upgrades due to the system's inherent modularity and openness, upgradeability is there only to implement new, breaking changes that would be impossible, or unreasonable to implement otherwise.
 
 This does come with a few caveats, for instance, the `ModuleGlobals` contract implements a currency whitelist, but it is not upgradeable, so the "removal" of a currency whitelist in a module would require a specific new module that does not query the `ModuleGlobals` contract for whitelisted currencies.
+
+## Security and Privacy concerns
+
+### Concerns
+
+In the next decade, web services will evolve to become truly personal, living in more places than just your browser, and reason over every intimate detail of our personal lives. There are examples to demonstrate this already. For example, in the past five years, the number of in-home smart assistants has grown from zero to half a billion web-connected devices. Our private lives have become a public commodity and as web services evolve to become more personal, we need to rethink how we control our data.
+
+### Pseudonymously 
+
+... with zero knowledge verified NFTs. This means you can prove credentials, ownership, or facts without them tracing back to you.
+
+### ZK Proof
+
+In your wallet(s), you have NFTs that can point back to your identity (aka, getting doxxed). But what if you can verify ownership of NFTs while staying pseudonymous?
+When you connect your wallet(s), we verify your NFTs. Then, we create ZK badges out of them.
+
+### ZK badges
+
+This means you can prove ownership of an NFT without it tracing back to you.
+
+### Building your identities with ZK Badges
+
+Once you have ZK proof, you can add create ZK badges for an anonymous wallet.
+Zk badges verify you own an NFT but leaves no bread crumbs back to your personal wallets.
