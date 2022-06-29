@@ -4,22 +4,23 @@
 
 Any address can create a profile and receive an ERC-721 Fremen Profile NFT. Profiles are represented by a ProfileStruct:
 
-/**
- * @notice A struct containing profile data.
- *
- * @param pubCount The number of publications made to this profile.
- * @param followNFT The address of the followNFT associated with this profile, can be empty..
- * @param followModule The address of the current follow module in use by this profile, can be empty.
- * @param handle The profile's associated handle.
- * @param uri The URI to be displayed for the profile NFT.
- */
-struct ProfileStruct {
-    uint256 pubCount;
-    address followNFT;
-    address followModule;
-    string handle;
-    string uri;
-}
+```
+# A struct containing profile data.
+#
+# pubCount The number of publications made to this profile.
+# followNFT The address of the followNFT associated with this profile, can be empty..
+# followModule The address of the current follow module in use by this profile, can be empty.
+# handle The profile's associated handle.
+# uri The URI to be displayed for the profile NFT.
+
+struct ProfileStruct:
+    member pubCount: Unit256
+    member followNFT: felt
+    member followModule: felt
+    member handle: felt
+    member uri: felt
+end
+```
 
 Profiles have a specific URI associated with them, which is meant to include metadata, such as a link to a profile picture or a display name for instance, the JSON standard for this URI is not yet determined. Profile owners can always change their follow module or profile URI.
 
@@ -30,24 +31,24 @@ Profile owners can `publish` to any profile they own. There are three `publicati
 Publications are on-chain content created and published via profiles. Profile owners can create (publish) three publication types, outlined below. They are represented by a `PublicationStruct`:
 
 ```
-/**
- * @notice A struct containing data associated with each new publication.
- *
- * @param profileIdPointed The profile token ID this publication points to, for mirrors and comments.
- * @param pubIdPointed The publication ID this publication points to, for mirrors and comments.
- * @param contentURI The URI associated with this publication.
- * @param referenceModule The address of the current reference module in use by this profile, can be empty.
- * @param collectModule The address of the collect module associated with this publication, this exists for all publication.
- * @param collectNFT The address of the collectNFT associated with this publication, if any.
- */
-struct PublicationStruct {
-    uint256 profileIdPointed;
-    uint256 pubIdPointed;
-    string contentURI;
-    address referenceModule;
-    address collectModule;
-    address collectNFT;
-}
+# A struct containing data associated with each new publication.
+
+# profileIdPointed The profile token ID this publication points to, for mirrors and comments.
+# pubIdPointed The publication ID this publication points to, for mirrors and comments.
+# contentURI The URI associated with this publication.
+# referenceModule The address of the current reference module in use by this profile, can be empty.
+# collectModule The address of the collect module associated with this publication, this exists for all publication.
+# collectNFT The address of the collectNFT associated with this publication, if any.
+
+struct PublicationStruct:
+    member profileIdPointed: Unit256
+    member pubIdPointed: Unit256
+    member contentURI: felt
+    member referenceModule: felt
+    member collectModule: felt
+    member collectNFT: felt
+end
+
 ```
 
 #### Publication Types
