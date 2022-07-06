@@ -107,7 +107,7 @@ When user connect his wallet(s), we verify his NFTs. Then, we create ZK badges o
 
 This means user can prove ownership of an NFT without it tracing back to user.
 
-### Building user identities (Profile NFTs) with ZK Badges
+#### Building user identities (Profile NFTs) with ZK Badges
 
 Once user has ZK proof, user can add create ZK badges for an anonymous wallet.
 Zk badges verify user owns an NFT but leaves no bread crumbs back to his personal wallets.
