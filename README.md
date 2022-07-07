@@ -103,6 +103,8 @@ ZK Social Graph project goal is to extend Lens Protocol with pseudonymous Profil
 In user's wallet(s), he has NFTs that can point back to his identity (aka, getting doxxed). But what if user can verify ownership of NFTs while staying pseudonymous?
 When user connect his wallet(s), we verify his NFTs. Then, we create ZK badges out of them.
 
+https://youtu.be/_0F4QP5rJ_Q?t=3186 
+
 #### ZK badges
 
 This means user can prove ownership of an NFT without it tracing back to user.
@@ -111,3 +113,15 @@ This means user can prove ownership of an NFT without it tracing back to user.
 
 Once user has ZK proof, user can add create ZK badges for an anonymous wallet.
 Zk badges verify user owns an NFT but leaves no bread crumbs back to his personal wallets.
+
+## Milestones
+
+1. Core (upgradable proxy pattern StarkWare equivalents, settings, basic security components)
+2. Profile NFT
+3. Follow module
+4. Publication NFT
+5. Reference Module
+6. Collect Module
+7. ZK Proofs to create private profiles
+8. Indexer(s)
+9. GraphQL APIs
